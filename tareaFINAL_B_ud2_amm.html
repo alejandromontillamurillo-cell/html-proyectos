@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea final B</title>
+    <meta name="description" content="Esta es mi primera página web.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Montilla">
+    <style>
+        ul {list-style: none; padding-left: 10px;}
+    </style>
+</head>
+<body>
+    <h1>Reservation Request</h1>
+    <form action="" method="get"> 
+        <fieldset>
+            <legend><b>General Information</b></legend>
+            <table>
+                <tr>
+                    <td><label for="arrival"><b>Arrival Date:</b></label></td>      
+                    <td><input type="date" name="arrival" id="arrival"></td>
+                    <td><label for="departure"><b>Departure Date:</b></label></td>
+                    <td><input type="date" name="departure" id="departure"></td>
+                </tr>
+                <tr>
+                    <td><label for="adults"><b>Adults:</b></label></td>      
+                    <td>
+                        <select name="adults" id="adults">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </td>
+                    <td><label for="children"><b>Children:</b></label></td>
+                    <td>
+                        <select name="children" id="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><b>Preferences</b></legend>
+            <table>
+                <tr>
+                    <td style="vertical-align: top;"><label><b>Room type:</b></label></td>
+                    <td>
+                        <ul>
+                            <li><input type="radio" name="room_type" id="standard"> <label for="standard">Standard</label></li>
+                            <li><input type="radio" name="room_type" id="business"> <label for="business">Business</label></li>
+                            <li><input type="radio" name="room_type" id="suite"> <label for="suite">Suite</label></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top;"><label><b>Services:</b></label></td>
+                    <td>
+                        <ul>
+                            <li><input type="checkbox" name="services" id="tv"> <label for="tv">TV</label></li>
+                            <li><input type="checkbox" name="services" id="wifi"> <label for="wifi">Wifi</label></li>
+                            <li><input type="checkbox" name="services" id="room_service"> <label for="room_service">Room service</label></li>
+                            <li><input type="checkbox" name="services" id="laundry"> <label for="laundry">Laundry</label></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="button">Smoker Room</button></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><b>Contact Information</b></legend>
+            <table>
+                <tr>
+                    <td><label for="name"><b>Name:</b></label></td>      
+                    <td><input type="text" name="name" id="name"></td>
+                    <td><label for="dni"><b>DNI:</b></label></td>
+                    <td><input type="file" name="dni" id="dni"></td>
+                </tr>
+                <tr>
+                    <td><label for="email"><b>Email:</b></label></td>      
+                    <td><input type="email" name="email" id="email" placeholder="user@gmail.com"></td>
+                    <td><label for="phone"><b>Phone:</b></label></td>
+                    <td><input type="tel" name="phone" id="phone"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <button type="submit">Submit Reservation</button>
+        <button type="reset">Clear</button>
+    </form>
+</body>
+</html>

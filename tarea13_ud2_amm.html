@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de salas</title>
+</head>
+<body>
+
+    <h1>FORMULARIO DE RESERVA DE SALAS</h1>
+
+    <form action="" method="get">
+        <table>
+            <tr>
+                <td><label for="nombre">Tu nombre: *</label></td>
+                <td><input type="text" name="nombre" id="nombre" required placeholder="Nombre"></td>
+            </tr>
+
+            <tr>
+                <td><label for="correo">Correo electrónico: *</label></td>
+                <td><input type="email" name="correo" id="correo" required placeholder="correo"></td>
+            </tr>
+
+            <tr>
+                <td><label for="departamento">Departamento: *</label></td>
+                <td>
+                    <select name="departamento" id="departamento" required>
+                        <option value="">Selecciona un departamento</option>
+                        <option value="ventas">Ventas</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="informatica">Informática</option>
+                        <option value="administracion">Administración</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tipo de sala que desea reservar:</td>
+                <td>
+                    <input type="radio" name="opcion" id="opcion_a" value="A" required>
+                    <label for="opcion_a">Opción A</label>
+                    <br>
+                    <input type="radio" name="opcion" id="opcion_b" value="B">
+                    <label for="opcion_b">Opción B</label>
+                    <br>
+                    <input type="radio" name="opcion" id="opcion_c" value="C">
+                    <label for="opcion_c">Opción C</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Requisitos extra:</td>
+                <td>
+                    <input type="checkbox" name="caballete" id="caballete" value="si">
+                    <label for="caballete">Caballete y bolígrafos</label>
+                    <br>
+                    <input type="checkbox" name="tele" id="tele" value="si">
+                    <label for="tele">Televisión</label>
+                    <br>
+                    <input type="checkbox" name="bebidas" id="bebidas" value="si">
+                    <label for="bebidas">Café, té y agua</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="fecha">Fecha de la reserva: *</label></td>
+                <td><input type="date" name="fecha" id="fecha" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="hora">Hora de la reserva: *</label></td>
+                <td><input type="time" name="hora" id="hora" required></td>
+            </tr>
+        </table>
+
+        <button type="submit">ENVIAR SOLICITUD</button>
+    </form>
+
+</body>
+</html>

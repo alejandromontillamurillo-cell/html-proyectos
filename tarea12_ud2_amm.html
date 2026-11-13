@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 12</title>
+    <meta name="description" content="Esta es mi primera página web.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Montilla">
+    <style>
+        ul {list-style: none;}
+</style>
+</head>
+<body>
+    <H1>HOJA DE INSCRIPCION EN LOS CICLOS DE GRADO SUPERIOR</H1>
+    <form acction="" method="get"> 
+        <fieldset>
+            <legend><b>DATOS PERSONALES</b></legend>
+            <table>
+                <tr>
+                    <td><label for="nombre">NOMBRE:</label></td>      
+                    <td><input type="text" name="nombre" id="nombre"></td>
+                    <td><label for="apellido">APELLIDOS:</label></td>
+                    <td><input type="text" name="apellido" id="apellido"></td>
+                    <td><label for="dni">DNI:</label></td>
+                    <td><input type="text" name="dni" id="dni"></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="localidad">LOC.NACIMIENTO:</label></td>      
+                    <td><input type="text" name="localidad" id="localidad"></td>
+                    <td><label for="provincia">PROVINCIA</label></td>
+                    <td>
+                        <select name="provincias" id="provincia">
+                            <option value="sevilla">Sevilla</option>
+                            <option value="cadiz">Cádiz</option>
+                        </select>
+                    </td>
+                    <td><label for="nacimiento">FECHA NACIMIENTO:</label></td>
+                    <td><input type="date" name="nacimiento" id="nacimiento"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="direccion">DIRECCION:</label></td>      
+                    <td><input type="text" name="direccion" id="direccion"></td>
+                    <td></td>
+                    <td></td>
+                    <td><label for="codpostal">COD.POSTAL:</label></td>
+                    <td><input type="text" name="codpostal" id="codpostal"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">EMAIL:</label></td>      
+                    <td><input type="email" name="email" id="email"></td>
+                    <td></td>
+                    <td></td>
+                    <td><label for="movil">TELF.MÓVIL:</label></td>
+                    <td><input type="tel" name="movil" id="movil"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><b>DATOS PERSONALES</b></legend>
+            <h4>Forma de acceso</h4>
+                <ul>
+                    <li>
+                        <input type="radio" name="formadeacceso" id="formadeacceso">
+                        <label for="formadeacceso">DIRECTO:</label>     
+                        <ul>
+                            <li>
+                                <input type="radio" name="bachilog" id="bachilog">
+                                <label for="bachilog">BACHILLERATO LOGSE</label>     
+                            </li>
+                            <li>
+                                <input type="radio" name="bachiex" id="bachiex">
+                                <label for="bachiex">BACHILLERATO EXPERIMENTAL</label>     
+                            </li>
+                            <li>
+                                <input type="radio" name="COU" id="COU">
+                                <label for="COU">COU</label>     
+                            </li>
+                            <li>
+                                <input type="radio" name="FP2" id="FP2">
+                                <label for="FP2">FP2</label>     
+                            </li>
+                            <li>
+                                <input type="radio" name="OTRO" id="OTRO">
+                                <label for="OTRO">OTRO</label>     
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <input type="radio" name="formadeacceso" id="formadeacceso">
+                        <label for="formadeacceso">PRUEBA LIBRE</label>     
+                    </li>
+                </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>DOCUMENTOS ADJUNTOS</b></legend>
+                <input type="checkbox" name="fotocopiadni" id="fotocopiadni">
+                <label for="fotocopiadni">Fotocopia DNI</label>
+                <br>
+                <input type="checkbox" name="certificadoac" id="certificadoac">
+                <label for="certificadoac">Certificado academico</label>
+                <br>
+                <input type="checkbox" name="otrodoc" id="otrodoc">
+                <label for="otrodoc">Otro documento(Especificar)</label>
+                <input type="text" name="otrodoc" id="otrodoc">
+                <br>
+                <input type="file" name="selecarchi" id="selecarchi">
+                <label for="selecarchi"></label>
+
+        </fieldset>
+        <br>
+        <button type="submit">ENVIAR SOLICITUD</button>
+    </form>
+</body>
+</html>
