@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen3</title>
+    <meta name="author" content="Montilla"> 
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+        <table>
+                <legend>Datos de Usuario</legend>
+                <tr>
+                    <td><label for="usuario">Usuario: *</label></td>
+                    <td><input type="text" name="usuario" id="usuario" placeholder="usuario" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password: *</label></td>
+                    <td><input type="password" name="password" id="password" placeholder="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="fecha">Fecha de Nacimiento: </label></td>
+                    <td><input type="text" name="fecha" id="fecha" placeholder="dd / mm / aaaa" required></td>
+                </tr>
+                <tr>
+                    <td><label for="curso">Curso de Matriculación: </label></td>
+                    <td>
+                        <select name="" id="curso" name="curso">
+                            <option value="mañana">DAW 1 - mañana</option>
+                            <option value="tarde">DAW 1 - tarde</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="role">Role: </label></td>
+                    <td>
+                        <input type="radio" name="role" id="estudiante" value="estudiante">
+                        <label for="estudiante">Estudiante</label>
+                        
+                        <br>
+                        <input type="radio" name="role" id="profesor" value="profesor">
+                        <label for="profesor">Profesor</label>
+                        
+                        <br>
+                        <input type="radio" name="role" id="apoyo" value="apoyo">
+                        <label for="apoyo">Apoyo</label>
+                        
+                        <br>
+                        <input type="radio" name="role" id="staff" value="staff">
+                        <label for="staff">Staff</label>
+                        
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="role">Forma de Comunicación: </label></td>
+                    <td>
+                        <input type="checkbox" name="forma" id="mail" value="mail">
+                        <label for="mail">Mail</label>
+                        
+                        <br>
+                        <input type="checkbox" name="forma" id="telefono" value="telefono">
+                        <label for="telefono">Telefono</label>
+                        
+                        <br>
+                        <input type="checkbox" name="forma" id="correoordi" value="correoordi">
+                        <label for="correoordi">Correo ordinario</label>
+                        
+                        <br>
+                        
+                    </td>
+                </tr>
+        </table>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
